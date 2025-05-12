@@ -1,0 +1,120 @@
+body 
+{
+    text-align: center;
+    font-size: 25px;
+    background: linear-gradient(rgb(101, 219, 78),rgb(222, 243, 104),rgb(1, 12, 43));
+    color: white;
+    margin: 0;  
+    display: table;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+#agroecologia{
+    color: rgb(255, 217, 92);
+    font-family:"Tagesschrift", system-ui;
+    background-image: url(https://th.bing.com/th/id/R.a66ba574bbe5fa5bb61545e357e140cf?rik=vmbkC0yo9%2fTOhg&pid=ImgRaw&r=0);
+    border-radius: 100px;
+    border-left: 100px;
+    border-right: 100px;
+    background-size: 100%;
+    background;
+    background-position: 2cm;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+#welcome{
+    color: black;
+}
+
+#textoagroecologia{
+    color: black;
+}
+
+a {
+        text-decoration: none;
+}    
+    
+ .Menu{
+        background: rgb(0, 0, 0);
+        position: fixed;
+        top: 0px;
+        margin-top: 0px;
+        width: 100%;
+        z-index: 10;
+    
+        list-style: none;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+        z-index: 10;
+        cursor: pointer
+ }
+.links {
+        display: inline;
+        float: none;
+        padding-top: 5px;
+        padding-left: 9px;
+        padding-right: 20px;
+        padding-bottom: 5px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        
+}
+
+.links:hover {
+        font-size: 25px;
+        text-decoration: underline rgb(255, 255, 255);
+}
+    
+#name{
+    font-size: 50px;
+    font-family: Big Shoulders;
+ }
+    
+#bio {
+        font-family: Big Shoulders;
+        padding: 50px;
+}
+
+.menu a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+}
+a:hover{
+        color: rgb(137, 255, 143);
+}
+
+#Carreira{
+        color: rgb(0, 0, 0);
+}
+
+.Localizações a{
+        color: rgb(255, 255, 255);
+}
+
+#Localizações iframe{
+        width: 100%;
+}
+ 
+
+.Localizações h3{
+        display: inline;
+}
+
+.outrasap {
+        color: rgb(0, 0, 0);
+}
+.agroecologia {
+    .glass-antiqua-regular {
+        font-family: "Glass Antiqua", cursive;
+        font-weight: 400;
+        font-style: normal;
+        
+      }
+      
+}
+a {
+    text-decoration: none;
+}
