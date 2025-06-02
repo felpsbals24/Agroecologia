@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agroecologia Sustentável</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>Agroecologia Sustentável</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#gallery">Galeria</a></li>
+          <li><a href="#contact">Contato</a></li>
+          <li><button id="theme-toggle">🌞/🌙</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Promovendo a sustentabilidade no campo</h2>
+      <p>Conectando práticas agrícolas sustentáveis com tecnologias inovadoras para um futuro melhor.</p>
+      <img src="https://images.unsplash.com/photo-1603985527795-e5c81d65f14e" alt="Agroecologia" class="hero-img">
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h3>Sobre Nós</h3>
+      <p>Somos uma iniciativa dedicada à promoção da agroecologia e práticas sustentáveis na agricultura, visando a preservação ambiental e o bem-estar das comunidades rurais.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h3>Projetos</h3>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1598954119265-e3b27de6a77f" alt="Horta Comunitária">
+          <h4>Horta Comunitária</h4>
+          <p>Implementação de hortas urbanas para promover a segurança alimentar e a educação ambiental.</p>
+        </div>
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7" alt="Capacitação de Agricultores">
+          <h4>Capacitação de Agricultores</h4>
+          <p>Oficinas e cursos sobre técnicas de cultivo sustentável e manejo agroecológico.</p>
+        </div>
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1506617420156-8e4536971650" alt="Recuperação de Nascentes">
+          <h4>Recuperação de Nascentes</h4>
+          <p>Projetos de reflorestamento e proteção de nascentes para garantir a disponibilidade de água.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <div class="container">
+      <h3>Galeria</h3>
+      <div class="carousel">
+        <img class="carousel-img" src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c" alt="Plantação">
+        <img class="carousel-img" src="https://images.unsplash.com/photo-1589927986089-35812388d1f4" alt="Tratores sustentáveis">
+        <img class="carousel-img" src="https://images.unsplash.com/photo-1607522370275-44e28c8c1b83" alt="Produção orgânica">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h3>Contato</h3>
+      <form id="contact-form">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="form-response" class="form-response"></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Agroecologia Sustentável. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
