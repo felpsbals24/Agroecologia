@@ -1,103 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Agroecologia Sustentável</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agroecologia Sustentável</title>
+    <meta name="description" content="Site sobre Agroecologia Sustentável: definição, vídeos, textos e localização." />
+
+    <link href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <h1>Agroecologia Sustentável</h1>
-      <nav class="nav">
-        <ul>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#projects">Projetos</a></li>
-          <li><a href="#gallery">Galeria</a></li>
-          <li><a href="#contact">Contato</a></li>
-          <li><button id="theme-toggle">🌞/🌙</button></li>
+<!-- os botões  -->
+    <ul class="menu">
+        <li class="links"><a href="#welcome">Início</a></li>
+        <li class="links"><a href="#trabalhos">Definição</a></li>
+        <li class="links"><a href="#videos">Vídeos</a></li>
+        <li class="links"><a href="#localizacao">Localização</a></li>
+    </ul>
+
+    <!--primeira parte-->
+   <section id="welcome" class="section bg-agroecologia">
+    <h1 id="tituloagroecologia">Agroecologia</h1>
+    <button type="button" onclick="botao1()" class="btn-design"> Oque é?</button>
+    <h2 id="subtitulo" class="fade-in" style="font-family: 'Glass Antiqua', cursive; display:none;">Uma prática sustentável</h2> 
+   <a href="https://www.essj.com.br/page/2/" target="_blank" class="imagem-link">
+    <img src="https://scontent.fcgh64-1.fna.fbcdn.net/v/t39.30808-6/460556746_953301730170823_8092381152670152574_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=i9L-_epJUQoQ7kNvwHtobhR&_nc_oc=AdnaGPD9tN-XNeA5grN3KFEIQ1bEY8A5QOpUmTZb-d8kABF05_K7QyFSI0xllDC1OAujbAW2Qh0xWaaC1StT7hmo&_nc_zt=23&_nc_ht=scontent.fcgh64-1.fna&_nc_gid=UtVV2aEO7pj6QdgYv7hzXQ&oh=00_AfJ9qClNIy8_sEVwO556ovQqjcLwG9Kin6NozPqfyJrzHA&oe=6842B25F"
+     alt="São José site" />
+</a>
+
+        </section>
+<section class="section desafios-solucoes">
+    <button class="accordion" onclick="toggleAccordion('desafios-lista')">
+        Desafios combatidos pela Agroecologia
+        <span class="seta">&#9660;</span>
+    </button>
+    <div id="desafios-lista" class="panel">
+        <ul class="problemas">
+            <li><i class="fa fa-exclamation-triangle"></i> Uso intensivo de agrotóxicos</li>
+            <li><i class="fa fa-tint"></i> Esgotamento de recursos hídricos</li>
+            <li><i class="fa fa-leaf"></i> Fome e desnutrição</li>
+            <li><i class="fa fa-cloud"></i> Emissão de gases de efeito estufa</li>
+            <li><i class="fa fa-tree"></i> Degradação do solo</li>
+            <li><i class="fa fa-recycle"></i> Contaminação de rios</li>
         </ul>
-      </nav>
     </div>
-  </header>
 
-  <section class="hero">
-    <div class="container">
-      <h2>Promovendo a sustentabilidade no campo</h2>
-      <p>Conectando práticas agrícolas sustentáveis com tecnologias inovadoras para um futuro melhor.</p>
-      <img src="https://images.unsplash.com/photo-1603985527795-e5c81d65f14e" alt="Agroecologia" class="hero-img">
+    <button class="accordion" onclick="toggleAccordion('solucoes-lista')">
+        Soluções propostas
+        <span class="seta">&#9660;</span>
+    </button>
+    <div id="solucoes-lista" class="panel">
+        <ul class="solucoes">
+            <li><i class="fa fa-handshake-o"></i> Abandono da lógica extrativista do agronegócio</li>
+            <li><i class="fa fa-globe"></i> Abordagem holística: dimensões sociais, econômicas e ambientais</li>
+            <li><i class="fa fa-balance-scale"></i> Sistema alimentar justo e equitativo</li>
+            
+        </ul>
     </div>
-  </section>
 
-  <section id="about" class="section">
-    <div class="container">
-      <h3>Sobre Nós</h3>
-      <p>Somos uma iniciativa dedicada à promoção da agroecologia e práticas sustentáveis na agricultura, visando a preservação ambiental e o bem-estar das comunidades rurais.</p>
-    </div>
-  </section>
 
-  <section id="projects" class="section">
-    <div class="container">
-      <h3>Projetos</h3>
-      <div class="projects-grid">
-        <div class="project-card">
-          <img src="https://images.unsplash.com/photo-1598954119265-e3b27de6a77f" alt="Horta Comunitária">
-          <h4>Horta Comunitária</h4>
-          <p>Implementação de hortas urbanas para promover a segurança alimentar e a educação ambiental.</p>
-        </div>
-        <div class="project-card">
-          <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7" alt="Capacitação de Agricultores">
-          <h4>Capacitação de Agricultores</h4>
-          <p>Oficinas e cursos sobre técnicas de cultivo sustentável e manejo agroecológico.</p>
-        </div>
-        <div class="project-card">
-          <img src="https://images.unsplash.com/photo-1506617420156-8e4536971650" alt="Recuperação de Nascentes">
-          <h4>Recuperação de Nascentes</h4>
-          <p>Projetos de reflorestamento e proteção de nascentes para garantir a disponibilidade de água.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="gallery" class="section">
-    <div class="container">
-      <h3>Galeria</h3>
-      <div class="carousel">
-        <img class="carousel-img" src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c" alt="Plantação">
-        <img class="carousel-img" src="https://images.unsplash.com/photo-1589927986089-35812388d1f4" alt="Tratores sustentáveis">
-        <img class="carousel-img" src="https://images.unsplash.com/photo-1607522370275-44e28c8c1b83" alt="Produção orgânica">
-      </div>
-    </div>
-  </section>
 
-  <section id="contact" class="section">
-    <div class="container">
-      <h3>Contato</h3>
-      <form id="contact-form">
-        <label for="name">Nome:</label>
-        <input type="text" id="name" name="name" required />
+    <section id="trabalhos" class="section">
+        <h1 class="titulo">Definição</h1>
+        <iframe width="100%" height="10%" src="https://pt.wikipedia.org/wiki/Agroecologia#Defini%C3%A7%C3%A3o"></iframe>
+        <p class="texto">
+            A agroecologia é uma ciência multidisciplinar que busca integrar práticas agrícolas sustentáveis com o meio ambiente, visando saúde alimentar e conservação ecológica.
+        </p>
+        <img src="https://i.postimg.cc/3RYnsBkt/Agroecologia.gif" alt="Agroecologia gif" class="imagem-gif" />
+    </section>
+</section>
+    <!-- sessão de video -->
+    <section id="videos" class="section">
+    <h1 class="titulo" style="font-family: 'Tagesschrift', sans-serif; color:#2c6706">UFSC Explica</h1>
+    <iframe id="videoFrame" width="80%" height="400" src="https://www.youtube.com/embed/AiOU05dyF0Q" frameborder="0" allowfullscreen style="border: 5px solid #2e7d32; border-radius: 12px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);"></iframe>
+    <p id="texto-video">
+        Neste vídeo da UFSC, a agroecologia é apresentada como uma alternativa sustentável à agricultura convencional, promovendo justiça social e equilíbrio ecológico.
+    </p>
+</section>
 
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required />
+    
 
-        <label for="message">Mensagem:</label>
-        <textarea id="message" name="message" required></textarea>
+    <!-- Localização -->
+    <section id="localizacao" class="section">
+        <h1 class="titulo">Localização</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65260814.1167826!2d-134.4927759!3d-3.2996216000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926eca1645365b6b%3A0xabfc431d20b2b474!2sRio%20Amazonas!5e0!3m2!1spt-BR!2sbr!4v1747155702856!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
 
-        <button type="submit">Enviar</button>
-      </form>
-      <p id="form-response" class="form-response"></p>
-    </div>
-  </section>
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>© 2025 Agroecologia Sustentável. Todos os direitos reservados a TI-1A CPDB</p>
+    </footer>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Agroecologia Sustentável. Todos os direitos reservados.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="main1.js"></script>
 </body>
 </html>
