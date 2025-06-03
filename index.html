@@ -17,7 +17,7 @@
         <li class="links"><a href="#welcome">Início</a></li>
         <li class="links"><a href="#trabalhos">Definição</a></li>
         <li class="links"><a href="#videos">Vídeos</a></li>
-        <li class="links"><a href="#localizacao">Localização</a></li>
+        <li class="links"><a href="#Simulador">Simulador</a></li>
     </ul>
 
     <!--primeira parte-->
@@ -81,19 +81,72 @@
     </p>
 </section>
 
-    
+   <!-- sessão de simulador -->
+    <section id="simuladortexto" class="section">
+    <li class="titulo" style="color:#2c6706">Selecione a planta → Escolha o que quer plantar (alface, tomate, etc.).</li>
 
-    <!-- Localização -->
-    <section id="localizacao" class="section">
-        <h1 class="titulo">Localização</h1>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65260814.1167826!2d-134.4927759!3d-3.2996216000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926eca1645365b6b%3A0xabfc431d20b2b474!2sRio%20Amazonas!5e0!3m2!1spt-BR!2sbr!4v1747155702856!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <li class="titulo" style="color:#2c6706">Escolha sua região → Norte, Nordeste, etc. (define época ideal de plantio).</li>
+
+    <li class="titulo" style="color:#2c6706">Digite a área (m²) → Tamanho do espaço disponível.</li>
+
+    <li class="titulo" style="color:#2c6706">Clique em "Calcular" → O sistema mostra:</li>
+
+    <li class="titulo" style="color:#2c6706">Quantas plantas cabem</li>
+
+    <li class="titulo" style="color:#2c6706">Água necessária</li>
+
+    <li class="titulo" style="color:#2c6706">Melhor época para plantar</li>
+
+    <li class="titulo" style="color:#2c6706">Dicas de cultivo</li>
+
+    <h4 class="titulo" style="color:#2c6706">Prático para planejar hortas sustentáveis!</h4>
     </section>
 
+    <!-- Simulador de Plantio Consciente -->
+<section id="Simulador">
+    <div class="container">
+        <h1>Simulador de Plantio Consciente</h1>
+    <div class="form-group">
+        <label for="planta">Selecione a planta:</label>
+        <select id="planta">
+            <option value="">-- Selecione --</option>
+            <option value="alface">Alface</option>
+            <option value="tomate">Tomate</option>
+            <option value="cenoura">Cenoura</option>
+            <option value="feijao">Feijão</option>
+            <option value="milho">Milho</option>
+        </select>
+    </div>
+        
+    <div class="form-group">
+        <label for="regiao">Região:</label>
+        <select id="regiao">
+            <option value="">-- Selecione --</option>
+            <option value="norte">Norte</option>
+            <option value="nordeste">Nordeste</option>
+            <option value="centro-oeste">Centro-Oeste</option>
+            <option value="sudeste">Sudeste</option>
+            <option value="sul">Sul</option>
+        </select>
+    </div>
+        
+    <div class="form-group">
+        <label for="area">Área disponível (m²):</label>
+        <input type="number" id="area" min="1" value="10">
+    </div>
+        
+    <button id="calcular">Calcular Plantio</button>
+        
+    <div id="resultado"></div>
+</div>
+
+    <script src="main1.js"></script>
+
+<div>
     <!-- Rodapé -->
     <footer class="footer">
         <p>© 2025 Agroecologia Sustentável. Todos os direitos reservados a TI-1A CPDB</p>
     </footer>
-
-    <script src="main1.js"></script>
+</div>    
 </body>
 </html>
